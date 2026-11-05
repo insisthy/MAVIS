@@ -138,7 +138,6 @@ src/rag/                  Keyword retrieval and knowledge-card structures
 src/llm/                  API transport and structured-output parsing
 configs/                  Method parameters, no private file paths or credentials
 knowledge_base/examples/  Literature-based knowledge-card examples
-tests/                    Data-free method contract checks
 ```
 
 ### Core modules
@@ -161,10 +160,6 @@ They map, in order, to the four Agent names above. The Safety Controller is a
 separate deterministic component, not a fifth Agent.
 
 ## Validation
-
-Run `python -m unittest discover -s tests -v` to check the retrieval gate,
-Stage-A confidence mapping, label isolation, logit projection, output paths and
-knowledge-card structure.
 
 The source code is distributed under the MIT license. The literature cards
 retain their source attributions. This is research software, not a clinical
